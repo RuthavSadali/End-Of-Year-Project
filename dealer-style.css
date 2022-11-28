@@ -1,0 +1,97 @@
+.brandNameSign
+{
+    position:absolute;
+    left:1100px;
+    top: 20px;
+}
+.brandNameInput
+{
+    position:absolute;
+    left:1100px;
+    top: 60px;
+}
+.modelSign
+{
+    position:absolute;
+    left:1100px;
+    top:140px;
+}
+.modelInput
+{
+    position:absolute;
+    left:1100px;
+    top: 180px;
+}
+.colorSign
+{
+    position:absolute;
+    left:1100px;
+    top:260px;
+}
+.colorInput
+{
+    position:absolute;
+    left:1100px;
+    top:300px;
+}
+.mileageSign
+{
+    position:absolute;
+    left:1100px;
+    top:380px;
+}
+.mileageInput
+{
+    position:absolute;
+    left:1100px;
+    top:420px;
+}
+.yearSign
+{
+    position:absolute;
+    left:1100px;
+    top:500px;
+}
+.yearInput
+{
+    position:absolute;
+    left:1100px;
+    top:540px;
+}
+.priceSign
+{
+    position:absolute;
+    left:1100px;
+    top:620px;
+}
+.priceInput
+{
+    position:absolute;
+    left:1100px;
+    top:660px;
+}
+.left-side
+{
+    position:absolute;
+    left:100px;
+    top:550px;
+}
+.imageUpload
+{
+    position:absolute;
+    left:100px;
+    top:100px;
+}
+.button-location
+{
+    position:absolute;
+    left:1100px;
+    top:710px;
+
+}
+.carsViewButton
+{
+    position:absolute;
+    left:50px;
+    top:680px;
+}

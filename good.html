@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Good Credit Score</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="individual-style.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>var interestRate = 0.0421; var price = 0;</script>
+        <script src="creditScore.js"></script>
+    </head>
+    <body>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" style="color: gold;">Good Credit Score</a>
+            <div class="collapse navbar-collapse" id="menu">
+                
+            </div>
+        </nav>
+        <p></p>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Good Credit Score</h1>
+              <p class="lead">690-719</p>
+              <p class="lead">Interest Rate: 4.21%</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9 col-sm-12">
+              <h1 id="price"></h1>
+            </div>
+            <div class="col-md-3 col-sm-12" id="smallPic">
+                <script>addSmallCarPic();</script>
+            </div> 
+        </div>
+        <div class = "downPaymentHeader">
+          <h3>Please enter your down payment:</h3>
+        </div>
+        <div class = "downPaymentInput">
+            <input type="number" placeholder="" id="downPayment">
+        </div>
+        <script>
+          price = getPrice();
+          document.getElementById("price").innerHTML = "Price: $" + price;
+        </script>
+        <div class = "calculateButton">
+          <button type="button" onclick="printMonthlyCost(price, interestRate)">Calculate Payment</button>
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Loan Length</th>
+                    <th scope="col">Cost per Month</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>60 Months</td>
+                    <td id="60"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>72 Months</td>
+                    <td id="72"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>84 Months</td>
+                    <td id="84"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        </div>
+        <div class = "customerViewButton">
+          <button type="button" onclick="location.href='customerPage.html';">Back</button>
+        </div>
+        
+    </body>
+</html>

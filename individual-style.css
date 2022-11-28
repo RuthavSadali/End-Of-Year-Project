@@ -1,0 +1,24 @@
+.customerViewButton
+{
+    position:absolute;
+    left:1450px;
+    top:10px;
+}
+.downPaymentInput
+{
+    position:absolute;
+    left:210px;
+    top:500px;
+}
+.downPaymentHeader
+{
+    position:absolute;
+    left:210px;
+    top:450px;
+}
+.calculateButton
+{
+    position:absolute;
+    left:210px;
+    top:550px;
+}
